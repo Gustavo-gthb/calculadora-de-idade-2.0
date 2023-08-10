@@ -1,0 +1,234 @@
+    @font-face {
+        font-family: "Poppins Bold";
+        src: url(assets/fonts/Poppins-Bold.ttf);
+    }
+
+    @font-face {
+        font-family: "Poppins BoldItalic";
+        src: url(assets/fonts/Poppins-BoldItalic.ttf);
+    }
+
+    @font-face {
+        font-family: "Poppins ExtraBold";
+        src: url(assets/fonts/Poppins-ExtraBold.ttf);
+    }
+
+    @font-face {
+        font-family:"Poppins ExtraBoldItalic" ;
+        src: url(assets/fonts/Poppins-ExtraBoldItalic.ttf);
+    }
+
+    @font-face {
+        font-family:"Poppins Italic" ;
+        src: url(assets/fonts/Poppins-Italic.ttf);
+    }
+
+    @font-face {
+        font-family:"Poppins Regular" ;
+        src: url(assets/fonts/Poppins-Regular.ttf);
+    }
+
+    body {
+        display: flex;
+        font-family: "Poppins Italic";
+        font-weight: 800;
+        font-size: small;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+        overflow-y: hidden;
+        background-color: hsl(0, 0%, 86%);
+        margin: 0;
+        padding: 0;
+    }   
+
+    .border {
+        border: 1px solid hsl(0, 100%, 100%);
+        background-color: hsl(0, 100%, 100%);
+        border-radius: 20px;
+        border-bottom-right-radius:150px ;
+        width: 50%;
+        max-width: 700px;
+        height: 500px;
+    }
+
+    .lista {    
+        display: flex;
+        position: relative;
+        gap: 18%;
+        list-style: none;
+        margin-top:30px;
+        margin-bottom: 0;
+        letter-spacing: 2px;
+    }
+
+    .year{
+        position: relative;
+        right: 3.5%;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+    }
+
+    .div_input-number {
+        display: flex;
+        position: relative;
+        gap: 3%;
+        flex-direction: row;    
+
+    }
+
+    .input-number::placeholder {
+        font-family: "Poppins ExtraBoldItalic"; 
+        font-size: 20px ;
+    }
+
+    .input-number {
+        position: relative;
+        outline: none;
+        border: none;
+        border: 1px solid ;
+        border-radius: 5px;
+        position: relative; 
+        left: 5%;
+        top: 6%;    
+        height: 45px;   
+        width: 100px;
+        padding-left: 4%;
+        border-color: hsl(0, 0%, 86%);
+    }
+
+    .input-number:focus{
+        border-color: hsl(259, 100%, 65%);  
+    }
+
+    .list-error {
+        display: flex;
+        position: relative; 
+        font-size: 10px;
+        list-style: none;
+        right: 0.5%;
+        color: hsl(0, 100%, 67%);
+    }
+
+    .list-error2 {
+        position: relative; 
+        left: 8.5%;
+    }
+
+    .list-error3 {
+        position: relative; 
+        left: 16.5%;
+    }
+
+
+    .straight-edge {
+        position: relative;
+        border: 1px solid hsl(0, 0%, 86%);
+        width: 70%;
+        top: 8%;
+        left: 5%;  
+        margin-top: 0;  
+    }
+
+    .border-button {
+        position: relative;
+        display: flex;
+        justify-content: right;
+        right: 12%;
+        bottom: 1%;
+    }
+
+    .button {
+        border-radius: 50%;
+        border: none;
+        height: 90px;
+        width: 90px;
+        background-color: hsl(0, 0%, 8%);
+    }
+
+    .button:focus {
+        background-color: hsl(259, 100%, 65%);
+    }
+
+    .result{
+    position: relative;
+    left: 5%; 
+    font-size: 60px; 
+    font-family: "Poppins ExtraBoldItalic";
+    margin-bottom: 0%;
+    }
+
+    .result-years,.result-months,.result-days {
+        margin: 0;
+        
+    }
+
+    @media only screen and (max-device-width:375px) {
+        .border {
+           border-radius: 8%; 
+           border-bottom-right-radius:24%;
+           width: 90%;
+           height: 460px;
+        }
+
+        .lista {
+            gap: 23%;
+            right: 4%;
+            height: 20px;
+        }
+
+        .year {
+            right: 8%;
+        }
+
+        .div_input-number {
+            gap: 4%;
+        }
+
+        .input-number {
+            width: 70px;
+            left: 7%;
+        }
+
+        .border-button {
+            justify-content: center;
+            left: 1%;
+            top: 1.75%;
+        }
+
+        .button {
+            height: 60px;
+            width: 60px;
+        }
+
+        .button-img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .straight-edge {
+            width: 85%;
+            left: 8%;   
+        }
+
+        .result {
+            font-size: 50px;
+        }
+
+        .list-error {
+            font-size: 9px; 
+            right: 7%;
+        }
+
+        .list-error2 {
+            left: 6%;
+        }
+
+        .list-error3 {
+            left: 10%;
+        }
+    }
